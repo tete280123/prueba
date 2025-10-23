@@ -21,6 +21,7 @@ class PantallaPrincipal extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   SizedBox(height: size.height * 0.08),
+
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -42,17 +43,21 @@ class PantallaPrincipal extends StatelessWidget {
                       ),
                     ],
                   ),
+
                   const SizedBox(height: 16),
+
                   const Text(
                     'Encuentra a tu compañero de piso ideal',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 16, color: Colors.black87),
                   ),
+
                   const SizedBox(height: 40),
+
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () => Navigator.pushNamed(context, '/login'),
+                      onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         backgroundColor: brandBlue,
                         foregroundColor: Colors.white,
@@ -65,11 +70,13 @@ class PantallaPrincipal extends StatelessWidget {
                       child: const Text('Iniciar Sesión'),
                     ),
                   ),
+
                   const SizedBox(height: 10),
+
                   SizedBox(
                     width: double.infinity,
                     child: OutlinedButton(
-                      onPressed: () => Navigator.pushNamed(context, '/register'),
+                      onPressed: () {},
                       style: OutlinedButton.styleFrom(
                         foregroundColor: Colors.black87,
                         side: const BorderSide(color: Colors.black26),
@@ -81,7 +88,9 @@ class PantallaPrincipal extends StatelessWidget {
                       child: const Text('Registrarse'),
                     ),
                   ),
+
                   const SizedBox(height: 10),
+
                   SizedBox(
                     width: double.infinity,
                     child: OutlinedButton.icon(
@@ -95,7 +104,7 @@ class PantallaPrincipal extends StatelessWidget {
                       style: OutlinedButton.styleFrom(
                         backgroundColor: Colors.white,
                         foregroundColor: Colors.black87,
-                        side: const BorderSide(color: Colors.black12, width: 1),
+                        side: BorderSide(color: Colors.black12, width: 1),
                         minimumSize: const Size.fromHeight(50),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
@@ -103,6 +112,7 @@ class PantallaPrincipal extends StatelessWidget {
                       ),
                     ),
                   ),
+
                   SizedBox(height: size.height * 0.05),
                 ],
               ),

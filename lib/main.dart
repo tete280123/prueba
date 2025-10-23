@@ -16,11 +16,8 @@ class MatchRoomApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = ThemeData(
+      primaryColor: brandBlue,
       colorScheme: ColorScheme.fromSeed(seedColor: brandBlue),
-      useMaterial3: false,
-      textTheme: const TextTheme(
-        titleLarge: TextStyle(fontSize: 40, fontWeight: FontWeight.w800, color: brandBlue, height: 1.0),
-      ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: brandBlue,
